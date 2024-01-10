@@ -30,7 +30,7 @@ export default function Home() {
     });
 
     //Light Mode or Dark Mode
-    const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState("light");
 
     const toggleTheme = () => {
         setTheme((curr) => (curr === "light" ? "dark" : "light"));
@@ -74,72 +74,74 @@ export default function Home() {
 
                     <section className="info" id="info" >
                         <h1>About Me</h1>
-                        <p>Hello! My name is Eric Park. I am a second-year Computer Science student at McMaster University. I am expected to graduate in 2026 with a co-op degree in B.A.Sc. Degree in Computer Science. I started my journey in Computer Science not too long ago in grade 11 in high school course. I got very into it thanks to my very inspirational and well respected Computer Science teacher from Leo Hayes High School. I got introduced to CS through Visual Basics and then Java the year after. In my academic years in McMaster University, I was able to learn languages such as Python, Haskell, Elm, Bash and got able to learn little bit of Git/GitHub. </p>
+                        <p>Hello! My name is Eric Park. I am a second-year Computer Science student at McMaster University. I am expected to graduate in 2026 with a co-op degree in B.A.Sc. Degree in Computer Science. I started my journey in Computer Science not too long ago in grade 11 in high school course. I got very into it thanks to my very inspirational and well respected Computer Science teacher from Leo Hayes High School. I got introduced to CS through Visual Basics and then Java the year after. In my academic years in McMaster University, I was able to learn languages such as Python, Haskell, Elm, Bash and got able to learn little bit of Git/GitHub. Outside of school contents, I have learned LaTex, TypeScript, HTML, CSS.  </p>
 
                         <div className="row">
                             <div className="my-col">
-                                <h3>Schools</h3>
-                                <p>I go to McMaster</p>
+                                <h2>School</h2>
+                                <p>I am proud to say that I have been part of the Marauders since 2023 when I decided to move out from my hometown in New Brunswick to pursue my career as a Computer Scientist/Software Engineer at McMaster. It’s been a remarkable few semesters so far, and I cannot wait to learn and make more memories in this incredible community.</p>
                             </div>
                             <div className="my-col">
-                                <h3>Schools</h3>
-                                <p>I go to McMaster</p>
+                                <h2>Sports</h2>
+                                <p>Throughout my years, sports have always been a big part of me. From really any sports I will always be part of. The most recent sports team I participated in was my high school varsity soccer team. I like to push myself to my limits. My athletic years have taught me how to communicate with others and work in a team environment. </p>
                             </div>
-                            <div className="my-col">
-                                <h3>Schools</h3>
+                            {/* for three thing uncomment this  */}
+                            {/* <div className="my-col">
+                                <h2>Schools</h2>
                                 <p>I go to McMaster</p>
-                            </div>
+                            </div> */} 
                         </div>
                     </section>
-
-                    <section className="achi" id="achi">
-                        <h1>My Achievements</h1>
-                        <p>Scholarships</p>
-
-                        <div className="row">
-                            <div className="achi-col">
-                                <img src="Images/grad.jpg" />
-                                <div className="layer">
-                                    <h3>Multiple  Scholarships</h3>
-                                </div>
-                            </div>
-                            <div className="achi-col">
-                                <img src="Images/soccer.jpg" />
-                                <div className="layer">
-                                    <h3>Student Athlete</h3>
-                                </div>
-                            </div>
-                            <div className="achi-col">
-                                <img src="Images/achi.jpg" />
-                                <div className="layer">
-                                    <h3>High Achiever</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
                     <section className="like" id="like">
                         <h1>What do I like?</h1>
                         <p>when I like something I like it alot</p>
 
                         <div className="row">
                             <div className="like-col">
-                                <img src="Images/achi.jpg" />
-                                <h3>cars</h3>
-                                <p> I like it because</p>
+                                <img src="Images/cars.jpg" />
+                                <h3>Cars</h3>
+                                <p> I have always been fascinated with the car world since I was young. My dream was to be a car designer, but my love for being a designer died down when I discovered the love of solving problems and coding instead of using my creative thinking skills. Designing this website brought me creative thinking skills `I never thought I would use in this industry. It even made me fall more in love with front-end development!</p>
                             </div>
                             <div className="like-col">
-                                <img src="Images/achi.jpg" />
-                                <h3>cars</h3>
-                                <p> I like it because</p>
+                                <img src="Images/coding.jpg" />
+                                <h3>Coding</h3>
+                                <p> I love problem-solving. It satisfies me after I solve such problems. Coding also always allows me to innovate and impact around me in various ways. The logical thinking that it take to be a good programmer makes me excel in this sector. I cannot wait to take this to another level where I can impact the community around me to help them with their problems as a computer scientist. </p>
                             </div>
                             <div className="like-col">
-                                <img src="Images/achi.jpg" />
-                                <h3>cars</h3>
-                                <p> I like it because</p>
+                            <iframe src="https://open.spotify.com/embed/track/0FyRrCNUbl5Gy5HOuJW0aX?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                <h3>Music</h3>
+                                <p> I think everybody can agree on music. I love listening to music in cars. One of my favourite things is driving around the city with my friends. It has the power to evoke a wide range of emotions that can be a source of joy, comfort, nostalgia, or inspiration. Like my current favourite song above, your favourite music may be linked to specific memories or experiences, creating a solid emotional connection. </p>
                             </div>
                         </div>
                     </section>
+
+                    <section className="achi" id="achi">
+                        <h1>My Achievements</h1>
+                        <p>I have been fortunate enough to receive several scholarships in my academic years; I have received the <i>Nashwaaksis Lion’s Club</i>, the <i>Coca-Cola Prize</i>, and <i>McMaster’s Award of Excellence</i>. I also have received Lion’s Principal Gold for achieving one of the highest grades in my class. I am truly humbled to say that I am continuing with a high GPA throughout my University days as well.  </p>
+
+                        <div className="row">
+                            <div className="achi-col">
+                                <img src="Images/Coca-Cola.jpg" />
+                                <div className="layer">
+                                    <h3>Coca-Cola Prize</h3>
+                                </div>
+                            </div>
+                            <div className="achi-col">
+                                <img src="Images/Nash.jpg" />
+                                <div className="layer">
+                                    <h3>Nashwaaksis Lion’s Club</h3>
+                                </div>
+                            </div>
+                            <div className="achi-col">
+                                <img src="Images/Excellence.jpg" />
+                                <div className="layer">
+                                    <h3>McMaster’s Award of Excellence</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
 
                     <section className="talk" id="talk">
                         <hr />
@@ -156,7 +158,7 @@ export default function Home() {
                         </div>
 
                         <div className="comment-box">
-                            <Mailer />
+                            <Mailer/>
                         </div>
                     </section>
 

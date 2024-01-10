@@ -19,6 +19,45 @@ html, body {
   background-color: #ecf0f3;
 }
 
+/*-------------General----------*/
+
+p {
+  color: #777;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+#dark h2{
+  color: white;
+}
+
+#light h2{
+  color: black;
+}
+
+#dark h3{
+  color: white;
+}
+
+#light h3{
+  color: black;
+}
+
+/*-------------Main Page----------*/
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -35,12 +74,9 @@ html, body {
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)), url(/Images/background.jpg);
 }
 
-
-
 nav {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 nav img{
   width: 30%;
@@ -125,23 +161,27 @@ nav li:first-child{
   color: white;
 }
 
+
+
 .banner p {
   margin: 10px 0 40px;
   font-size: 14px;
   color: #fff;
 }
 
-/* @media(max-width: 400px){
+@media(max-width: 400px){
   .sidebar{
     width: 100%;
   }
 
-} */
+}
 @media(max-width: 800px) {
 
   .banner h1 {
     font-size: 20px;
+    color: white;
   }
+
   .hideOnMobile{
     display: none;
   }
@@ -173,17 +213,7 @@ nav li:first-child{
   }
 }
 
-.info {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 200px;
-}
-
-.info h1 {
-  font-size: 36px;
-  font-weight: 600;
-}
+/*-------------About Me----------*/
 
 #dark .info h1{
   color: white;
@@ -193,13 +223,11 @@ nav li:first-child{
   color: black;
 }
 
-
-  /*-------------About Me----------*/
-p {
-  color: #777;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 10px;
+.info {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 200px;
 }
 
 .row {
@@ -209,7 +237,9 @@ p {
 }
 
 .my-col {
-  flex-basis: 31%;
+  /* for three things uncomment this */
+  flex-basis: 31%; 
+  flex-basis: 47%;
   background: rgb(188, 219, 243);
   border-radius: 10px;
   margin-bottom: 5%;
@@ -226,22 +256,48 @@ p {
   background: rgb(188, 219, 243);
 } 
 
-h3 {
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
+.my-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-#dark h3{
+
+/*-----What do I like?------*/
+
+#dark .like h1{
   color: white;
 }
 
-#light h3{
+#light .like h1{
   color: black;
 }
 
-.my-col:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+.like {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.like-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.like-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.music{
+  border-radius:12px
+}
+
+.like-col h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 /*------------Achievements------------*/
@@ -259,6 +315,7 @@ h3 {
   margin: auto;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .achi-col {
@@ -270,6 +327,7 @@ h3 {
 }
 
 .achi-col img {
+  filter: blur(1px);
   width: 100%;
   display: block;
 }
@@ -314,44 +372,9 @@ h3 {
   opacity: 1;
 }
 
-/*-----What do I like?------*/
-#dark .like h1{
-  color: white;
-}
-
-#light .like h1{
-  color: black;
-}
-
-
-.like {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  line-height: 100px;
-  padding-top: 1px;
-}
-
-.like-col {
-  flex-basis: 31%;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
-}
-
-.like-col img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-
-.like-col h3 {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  text-align: left;
-}
 
 /*-----Wanna talk?------*/
+
 #dark .talk h1 {
   color: white;
 }
@@ -542,7 +565,24 @@ label{
   padding: 10px;
   cursor: text; 
   transition: 0.2s;
-}
+  display: flex;
+  flex-direction: row;
+  }
+
+  #name{
+    position: relative;
+    top: 5px;
+  }
+
+  #email{
+    position: relative;
+    top: 5px;
+  }
+
+  #message{
+    position: relative;
+    top: 5px;
+  }
 
 #button{
   padding:10px 0;
@@ -566,7 +606,7 @@ input:focus~label,
 input:valid~label,
 textarea:focus~label,
 textarea:valid~label{
-  top: -45px;
+  top: -35px;
   font: 14px;
 }
 
