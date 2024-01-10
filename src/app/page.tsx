@@ -101,7 +101,7 @@ export default function Home() {
                             <div className="like-col">
                                 <img src="Images/cars.jpg" />
                                 <h3>Cars</h3>
-                                <p> I have always been fascinated with the car world since I was young. My dream was to be a car designer, but my love for being a designer died down when I discovered the love of solving problems and coding instead of using my creative thinking skills. Designing this website brought me creative thinking skills `I never thought I would use in this industry. It even made me fall more in love with front-end development!</p>
+                                <p> I have always been fascinated with the car world since I was young. My dream was to be a car designer, but my love for being a designer died down when I discovered the love of solving problems and coding instead of using my creative thinking skills. Designing this website brought me creative thinking skills I never thought I would use in this industry. It even made me fall more in love with front-end development!</p>
                             </div>
                             <div className="like-col">
                                 <img src="Images/coding.jpg" />

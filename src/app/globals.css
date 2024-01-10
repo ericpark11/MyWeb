@@ -169,12 +169,12 @@ nav li:first-child{
   color: #fff;
 }
 
-@media(max-width: 400px){
+/* @media(max-width: 400px){
   .sidebar{
     width: 80%;
   }
 
-}
+} */
 @media(max-width: 800px) {
 
   .banner h1 {
@@ -189,6 +189,7 @@ nav li:first-child{
     display: block;
   }
   .sidebar{
+    width: 50%;
     padding: 20px;
   }
 
