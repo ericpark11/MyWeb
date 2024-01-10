@@ -2,7 +2,7 @@
 import React, { useState,useEffect, useRef, createContext } from 'react';
 import Mailer from "./component/mailer";
 
-export const ThemeContext = createContext(null);
+const ThemeContext = createContext(null);
 
 export default function Home() {
     //click Event
@@ -36,6 +36,7 @@ export default function Home() {
         setTheme((curr) => (curr === "light" ? "dark" : "light"));
     };
     return (
+
         <ThemeContext.Provider value={{theme, toggleTheme} as any}>
             <div className="App" id={theme}>
                 {/* <header>
@@ -170,6 +171,7 @@ export default function Home() {
                 </footer>
             </div>
         </ThemeContext.Provider>
+
     )
 }
 
