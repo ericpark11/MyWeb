@@ -52,16 +52,16 @@ export default function Home() {
                                 <ul className="sidebar" ref={menuRef} style={isOpen ? { display: 'flex' } : { display: 'none' }} >
                                     <li><a href="#header">Home</a></li>
                                     <li><a href="#info">About Me</a></li>
-                                    <li><a href="#achi">Achievements</a></li>
                                     <li><a href="#like">What do I Like?</a></li>
+                                    <li><a href="#achi">Achievements</a></li>
                                     <li><a href="#talk">Connect</a></li>
                                 </ul>
                             
                                 <ul>
                                     <li onClick={toggleTheme}><img src="Images/logo.png"></img><a href="#header"></a></li>
                                     <li className="hideOnMobile"><a href="#info">About Me</a></li>
-                                    <li className="hideOnMobile"><a href="#achi">Achievements</a></li>
                                     <li className="hideOnMobile"><a href="#like">What do I Like?</a></li>
+                                    <li className="hideOnMobile"><a href="#achi">Achievements</a></li>
                                     <li className="hideOnMobile"><a href="#talk">Connect</a></li>
                                     <li className="menuButton" onClick={toggle}><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="white" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a></li>
                                 </ul>
