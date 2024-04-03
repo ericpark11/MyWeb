@@ -75,7 +75,7 @@ export default function Home() {
 
                     <section className="info" id="info" >
                         <h1>About Me</h1>
-                        <p>Hello! My name is Eric Park. I am a second-year Computer Science student at McMaster University. I am expected to graduate in 2026 with a co-op degree in B.A.Sc. Degree in Computer Science. I started my journey in Computer Science not too long ago in grade 11 in high school course. I got very into it thanks to my very inspirational and well respected Computer Science teacher from Leo Hayes High School. I got introduced to CS through Visual Basics and then Java the year after. In my academic years in McMaster University, I was able to learn languages such as Python, Haskell, Elm, Bash and got able to learn little bit of Git/GitHub. Outside of school contents, I have learned LaTex, TypeScript, HTML, CSS.  </p>
+                        <p>Hello! My name is Eric Park. I am a second-year Computer Science student at McMaster University. I am expected to graduate in 2026 with a co-op degree in B.A.Sc. Degree in Computer Science. I started my journey in Computer Science not too long ago in grade 11 in a high school course. I got into it thanks to my inspirational and well-respected Computer Science teacher from Leo Hayes High School. I got introduced to CS through Visual Basics and Java the year after. In my academic years at McMaster University, I learned languages such as Python, Haskell, Elm, and Bash and learned a little bit of Git/GitHub. Outside school content, I have learned LaTex, TypeScript, HTML, and CSS.</p>
 
                         <div className="row">
                             <div className="my-col">
