@@ -1,6 +1,8 @@
 'use client';
 import React, { useState,useEffect, useRef, createContext } from 'react';
 import Mailer from "./component/mailer";
+import Script from 'next/script';
+import * as gtag from './component/analytics';
 
 const ThemeContext = createContext(null);
 
@@ -47,6 +49,19 @@ export default function Home() {
                 <main>
                     
                     <section className="header" id="header">
+                        <header>
+                        <Script src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GOOGLE_ANALYTICS_ID}`} />
+                            <Script id="gtag-init">
+                                {`
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+                                gtag('config', '${gtag.GOOGLE_ANALYTICS_ID}', {
+                                    page_path: window.location.pathname,
+                                });
+                                `}
+                        </Script>
+                        </header>
                         <nav>
                             <div className="navLinks">
                                 <ul className="sidebar" ref={menuRef} style={isOpen ? { display: 'flex' } : { display: 'none' }} >
@@ -75,7 +90,7 @@ export default function Home() {
 
                     <section className="info" id="info" >
                         <h1>About Me</h1>
-                        <p>Hello! My name is Eric Park. I am a second-year Computer Science student at McMaster University. I am expected to graduate in 2026 with a co-op degree in B.A.Sc. Degree in Computer Science. I started my journey in Computer Science not too long ago in grade 11 in a high school course. I got into it thanks to my inspirational and well-respected Computer Science teacher from Leo Hayes High School. I got introduced to CS through Visual Basics and Java the year after. In my academic years at McMaster University, I learned languages such as Python, Haskell, Elm, and Bash and learned a little bit of Git/GitHub. Outside school content, I have learned LaTex, TypeScript, HTML, and CSS.</p>
+                        <p>Hello! My name is Eric Park. I am a third-year Computer Science student at McMaster University. I am expected to graduate in 2027 with a co-op degree in B.A.Sc. Degree in Computer Science. I started my journey in Computer Science not too long ago in grade 11 in a high school course. I got into it thanks to my inspirational and well-respected Computer Science teacher from Leo Hayes High School. I got introduced to CS through Visual Basics and Java the year after. In my academic years at McMaster University, I learned languages such as Python, Haskell, Elm, and Bash and learned a little bit of Git/GitHub. Outside school content, I have learned LaTex, TypeScript, HTML, and CSS.</p>
 
                         <div className="row">
                             <div className="my-col">
